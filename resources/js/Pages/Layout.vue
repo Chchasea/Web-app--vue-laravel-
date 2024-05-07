@@ -13,7 +13,6 @@ export default{
 <template>
     <v-app>
         <v-app-bar>
-            <v-icon icon="mdi-plus"></v-icon>
             <v-btn @click = "drawer = !drawer">
                 toggle icon 
             </v-btn>
