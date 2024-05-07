@@ -1,7 +1,6 @@
 import './bootstrap';
 import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
-
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'

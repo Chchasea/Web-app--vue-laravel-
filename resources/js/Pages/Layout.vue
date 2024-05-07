@@ -12,45 +12,29 @@ export default{
 
 <template>
     <v-app>
-        <v-app-bar>
-            <v-btn @click = "drawer = !drawer">
-                toggle icon 
-            </v-btn>
-        </v-app-bar>
-        <v-navigation-drawer v-model="drawer">
-            <v-list>
-                <Link href="/">
-                    <v-list-item> Dashboard </v-list-item>
-                </Link>
-            </v-list>
-            <v-list>
-                <Link href="/questions">
-                    <v-list-item>Questions</v-list-item>
-                </Link>
-            </v-list>
-            <v-list>
-                <Link href="/well_being_report">
-                    <v-list-item>Well being Reports</v-list-item>
-                </Link>
-            </v-list>
-            <v-list>
-                <Link href="/survey_report">
-                    <v-list-item>Survey Reports</v-list-item>
-                </Link>
-            </v-list>
-            <v-list>
-                <Link href="bug_report">
-                    <v-list-item>Bug Reports</v-list-item>
-                </Link>
+        <v-navigation-drawer expand-on-hover rail permanent color="#171B24">
+            <v-list density="compact" nav>
+                <v-list-item disabled prepend-icon="mdi-folder" title="Happiness Index"></v-list-item>
+                <v-divider></v-divider>
+                <v-list-item prepend-icon="mdi-folder" title="Dashboard" href="/"></v-list-item>
+                <v-list-item prepend-icon="mdi-account-multiple" title="Questions" href="/questions"></v-list-item>
+                <v-divider></v-divider>
+                <v-list-item disabled prepend-icon="mdi-folder" title="Reports" value="myfiles"></v-list-item>
+                <v-divider></v-divider>
+                <v-list-item prepend-icon="mdi-folder" title="Well being" href="/well_being_report"></v-list-item>
+                <v-list-item prepend-icon="mdi-folder" title="Survey" href="/survey_report"></v-list-item>
+                <v-list-item prepend-icon="mdi-folder" title="Survey" href="/bug_report"></v-list-item>
+
             </v-list>
         </v-navigation-drawer>
         <v-main>
-            <slot/>
+            <v-card height=100% color="#262938" rounded-0>
+                <slot/>
+            </v-card>
         </v-main>
     </v-app>
 </template>
 
 <style>
-
 </style>
 

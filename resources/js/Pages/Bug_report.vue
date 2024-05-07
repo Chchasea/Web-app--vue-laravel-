@@ -6,7 +6,6 @@ import Layout from '@/Pages/Layout.vue';
 <script>
 export default{
     data:() =>({
-        drawer:null,
     }),
 }
 </script>

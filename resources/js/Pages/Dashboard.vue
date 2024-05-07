@@ -7,16 +7,13 @@ import Layout from '@/Pages/Layout.vue';
 <script>
 export default{
     data:() =>({
-        drawer:null,
     }),
 }
 </script>
 
 <template>
     <Layout>
-        <v-card>
             Dashboard
-        </v-card>
     </Layout>
     
 </template>
