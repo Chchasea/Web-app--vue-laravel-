@@ -16,14 +16,14 @@ export default{
             <v-list density="compact" nav>
                 <v-list-item disabled prepend-icon="mdi-folder" title="Happiness Index"></v-list-item>
                 <v-divider></v-divider>
-                <v-list-item prepend-icon="mdi-folder" title="Dashboard" href="/"></v-list-item>
-                <v-list-item prepend-icon="mdi-account-multiple" title="Questions" href="/questions"></v-list-item>
+                <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard" href="/"></v-list-item>
+                <v-list-item prepend-icon="mdi-help" title="Questions" href="/questions"></v-list-item>
                 <v-divider></v-divider>
                 <v-list-item disabled prepend-icon="mdi-folder" title="Reports" value="myfiles"></v-list-item>
                 <v-divider></v-divider>
-                <v-list-item prepend-icon="mdi-folder" title="Well being" href="/well_being_report"></v-list-item>
-                <v-list-item prepend-icon="mdi-folder" title="Survey" href="/survey_report"></v-list-item>
-                <v-list-item prepend-icon="mdi-folder" title="Survey" href="/bug_report"></v-list-item>
+                <v-list-item prepend-icon="mdi-emoticon-happy" title="Well being" href="/well_being_report"></v-list-item>
+                <v-list-item prepend-icon="mdi-chart-arc" title="Survey" href="/survey_report"></v-list-item>
+                <v-list-item prepend-icon="mdi-bug" title="Survey" href="/bug_report"></v-list-item>
 
             </v-list>
         </v-navigation-drawer>

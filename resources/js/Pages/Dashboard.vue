@@ -1,6 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
 import Layout from '@/Pages/Layout.vue';
+import '@mdi/font/css/materialdesignicons.css';
 
 </script>
 
@@ -13,6 +14,7 @@ export default{
         answers_per_week_percentage: 999,
         top_region_responder: 'Manila',
         top_region_responder_percentage:999,
+        recent_event_rate: 3,
         current_mood:'Happy',
     }),
 }
@@ -21,11 +23,12 @@ export default{
 <template>
     <Layout>
         <div class="text-h6 mb-3">Dashboard</div>
-        <v-card height=93%>
-            <v-select class="ma-5" rounded
+        <v-card height=93% >
+            <v-select class="mx-5 mt-3" rounded
                 width=20%
                 bg-color="#171B24"
                 variant="solo"
+                density="compact"
                 v-model="dashboard_filter_default"
                 :items="dashboard_filter"
             ></v-select>   
@@ -60,37 +63,43 @@ export default{
                         </v-row>
                         <v-row>
                             <v-col>
-                                <v-card elevation="5">
+                                <v-card elevation="5" >
                                 <div class="ma-3">Mood Chart</div>
                                 <div class="d-flex justify-center">PIE YAN, EDIT KO MAMAYA</div>
                                 <div class="d-flex justify-center">PIE YAN, EDIT KO MAMAYA</div>
                                 <div class="d-flex justify-center">PIE YAN, EDIT KO MAMAYA</div>
                                 <div class="d-flex justify-center">PIE YAN, EDIT KO MAMAYA</div>
-                                <div class="d-flex justify-center">PIE YAN, EDIT KO MAMAYA</div>
-                                <div class="d-flex justify-center">PIE YAN, EDIT KO MAMAYA</div>
+
                             </v-card>
                             </v-col>
                         </v-row>
                     </v-col>
                     <v-col>
-                        <v-card elevation="5">
+                        <v-card elevation="5" height=100%>
                             <div class="text-center text-h6 font-weight-black my-5">Top Region Responder</div>
-                            <div class="d-flex justify-center">
+                            
+                            <div class="">
                                 <v-img
-                                :width="300"
-                                aspect-ratio="1/1"
-                                cover
-                                src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+                                :width="180"
+                                src="https://i.pinimg.com/originals/9d/cb/e6/9dcbe69e4a216e2d69f8aedaba89bc60.jpg"
                                 ></v-img>
                             </div>
-                            <div class="text-center text-h6 ">{{current_mood}}</div>
+                            <div class="text-center ">{{current_mood}}</div>
                         </v-card>
                     </v-col>
                 </v-row>
                 <v-row>
                     <v-col>
-                        <
-                        Recent Event Rate
+                        <v-card elevation="5" class="mb-2">    
+                            <div class="text-center text-h6 font-weight-black my-2">Recent Event Rate</div>
+                            <div class="text-center">
+                                <v-rating
+                                v-model="recent_event_rate"
+                                color="orange-lighten-1"
+                                readonly
+                                ></v-rating>
+                            </div>
+                        </v-card>
                     </v-col> 
                 </v-row>
             </div>
