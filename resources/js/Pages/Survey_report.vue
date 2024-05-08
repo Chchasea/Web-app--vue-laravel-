@@ -12,9 +12,7 @@ export default{
 
 <template>
     <Layout>
-        <v-card>
-            Survey Report
-        </v-card>
+        Survey Report
     </Layout>
 </template>
 

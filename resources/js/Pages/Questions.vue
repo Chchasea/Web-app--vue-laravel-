@@ -12,9 +12,7 @@ export default{
 
 <template>
     <Layout>
-        <v-card>
-            Questions
-        </v-card>
+        Questions
     </Layout>
 </template>
 

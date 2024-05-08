@@ -28,7 +28,7 @@ export default{
             </v-list>
         </v-navigation-drawer>
         <v-main>
-            <v-card height=100% color="#262938" rounded-0>
+            <v-card height=100% color="#262938" class="pa-5 rounded-0">
                 <slot/>
             </v-card>
         </v-main>

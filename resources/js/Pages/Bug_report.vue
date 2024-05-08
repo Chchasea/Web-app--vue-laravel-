@@ -12,9 +12,7 @@ export default{
 
 <template>
     <Layout>
-        <v-card>
-            Bug report
-        </v-card>
+        Bug report
     </Layout>
 </template>
 

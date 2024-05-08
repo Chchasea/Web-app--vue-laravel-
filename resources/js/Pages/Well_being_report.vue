@@ -12,9 +12,7 @@ export default{
 
 <template>
     <Layout>
-        <v-card>
-            Well Being Report
-        </v-card>
+        Well Being Report
     </Layout>
 </template>
 
