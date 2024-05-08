@@ -12,7 +12,6 @@ const vuetify = createVuetify({
     directives,
   })
 
-
 createInertiaApp({
   resolve: name => {
     const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })

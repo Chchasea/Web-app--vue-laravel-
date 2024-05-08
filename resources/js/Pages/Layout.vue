@@ -22,8 +22,8 @@ export default{
                 <v-list-item disabled prepend-icon="mdi-folder" title="Reports" value="myfiles"></v-list-item>
                 <v-divider></v-divider>
                 <v-list-item prepend-icon="mdi-emoticon-happy" title="Well being" href="/well_being_report"></v-list-item>
-                <v-list-item prepend-icon="mdi-chart-arc" title="Survey" href="/survey_report"></v-list-item>
-                <v-list-item prepend-icon="mdi-bug" title="Survey" href="/bug_report"></v-list-item>
+                <v-list-item prepend-icon="mdi-chart-arc" title="Event" href="/survey_report"></v-list-item>
+                <v-list-item prepend-icon="mdi-bug" title="Bug" href="/bug_report"></v-list-item>
 
             </v-list>
         </v-navigation-drawer>

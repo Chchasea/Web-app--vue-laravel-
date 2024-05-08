@@ -16,6 +16,7 @@ export default{
         top_region_responder_percentage:999,
         recent_event_rate: 3,
         current_mood:'Happy',
+        emoticon:'https://i.pinimg.com/originals/9d/cb/e6/9dcbe69e4a216e2d69f8aedaba89bc60.jpg'
     }),
 }
 </script>
@@ -76,15 +77,15 @@ export default{
                     </v-col>
                     <v-col>
                         <v-card elevation="5" height=100%>
-                            <div class="text-center text-h6 font-weight-black my-5">Top Region Responder</div>
+                            <div class="text-center text-h6 font-weight-black my-5">Employees Current</div>
                             
-                            <div class="">
-                                <v-img
+                            <div>
+                                <v-img class="mx-auto"
                                 :width="180"
-                                src="https://i.pinimg.com/originals/9d/cb/e6/9dcbe69e4a216e2d69f8aedaba89bc60.jpg"
+                                :src="emoticon"
                                 ></v-img>
                             </div>
-                            <div class="text-center ">{{current_mood}}</div>
+                            <div class="text-center mt-3">{{current_mood}}</div>
                         </v-card>
                     </v-col>
                 </v-row>
