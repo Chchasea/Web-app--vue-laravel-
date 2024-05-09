@@ -46,14 +46,17 @@ import Layout from '@/Pages/Layout.vue';
                 </div>
             </v-row>
         </div>
+
         <!-- Main Content -->
         <v-card height=80%>
+            <!-- Back Button Here -->
+            <div class="text-h6 font-weight-black d-flex justify-end">Well Being Check Up | Adding a question</div>
+            
             <v-container class="spacing-playground pa-3" fluid>
                 <!-- Well Being Check Up -->
                 <v-card class="mb-5" color="#E3E5E3" height=40%>
                     <!-- Add Well Being Questions -->
                     <v-container class="spacing-playground pa-2 mb-2" fluid>
-                        <div class="text-h6 font-weight-black">Well Being Check Up</div>
                         <v-btn href="/add_daily_question" class="float-right" 
                             width=20% 
                             density="compact" 
@@ -240,4 +243,3 @@ import Layout from '@/Pages/Layout.vue';
 <style>
 
 </style>
-

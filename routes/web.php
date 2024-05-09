@@ -39,3 +39,6 @@ Route::get('/bug_report', function () {
     return Inertia::render('Bug_report');
 });
 
+Route::get('/add_daily_question', function () {
+    return Inertia::render('Add_Daily_Question');
+});
