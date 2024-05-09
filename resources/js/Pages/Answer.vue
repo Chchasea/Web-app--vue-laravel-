@@ -2,6 +2,7 @@
 import { Head, Link } from "@inertiajs/vue3";
 import Layout from "@/Pages/Layout.vue";
 import "@mdi/font/css/materialdesignicons.css";
+
 </script>
 
 <script>
@@ -15,13 +16,14 @@ export default {
     <Layout>
         <div class="text-h6 mb-3">Survey Reports</div>
         <v-card height="93%" class="pa-15">
+        <v-btn variant="text" prepend-icon="mdi-chevron-left" href="/survey_report">Back</v-btn>
             <v-card
                 class="mx-auto"
                 max-width="950"
                 elevation="5"
                 href="#/answer"
             >
-                <div class="flex-row">
+                <div class="flex-column ">
                     <div class="flex-row">
                         <div>
                             <span class="date font-weight-black">Event Name: </span>
@@ -33,10 +35,9 @@ export default {
                         </div>
                     </div>
                 
-                
-                    <div class="">
+                    <div class="flex-row">
                         
-                            <div class="">Recent Event Rate</div>
+                            <div class="">Recent Event Rate </div>
                             <div class="">
                                 <v-rating
                                 v-model="recent_event_rate"
