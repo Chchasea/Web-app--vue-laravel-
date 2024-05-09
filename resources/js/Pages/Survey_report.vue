@@ -15,12 +15,12 @@ export default {
 <template>
     <Layout>
         <div class="text-h6 mb-3">Survey Reports</div>
-        <v-card height="93%" class="pa-15">
+        <v-card  height="93%" class="pa-15">
             <v-card
                 class="mx-auto"
                 max-width="950"
                 elevation="5"
-                href="#/answer"
+                href="/Answer"
             >
                 <span class="date">January 25, 2024</span>
                 <span class="event"> Amdocs Coachella</span>
@@ -32,7 +32,7 @@ export default {
                     ></v-rating></span
             ></v-card>
 
-            <v-card class="mx-auto ma-3" max-width="950" elevation="5" href="#">
+            <v-card class="mx-auto ma-3" max-width="950" elevation="5" href="/Answer">
                 <Span class="date"> February 14, 2024</Span>
                 <Span class="event">Valentines Day</Span>
                 <Span class="text-center stars">
@@ -42,7 +42,7 @@ export default {
                         readonly
                     ></v-rating></Span
             ></v-card>
-            <v-card class="mx-auto ma-3" max-width="950" elevation="5" href="#">
+            <v-card class="mx-auto ma-3" max-width="950" elevation="5" href="/Answer">
                 <Span class="date">January 25, 2024</Span>
                 <Span class="event"> Amdocs Coachella</Span>
                 <Span class="text-center pa-16">
@@ -52,7 +52,7 @@ export default {
                         readonly
                     ></v-rating></Span
             ></v-card>
-            <v-card class="mx-auto ma-3" max-width="950" elevation="5" href="#">
+            <v-card class="mx-auto ma-3" max-width="950" elevation="5" href="/Answer">
                 <Span class="date">February 14, 2024</Span>
                 <Span class="event">Valentines Day</Span>
                 <Span class="text-center stars">

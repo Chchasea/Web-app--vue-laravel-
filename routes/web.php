@@ -31,6 +31,10 @@ Route::get('/survey_report', function () {
     return Inertia::render('Survey_report');
 });
 
+Route::get('/Answer', function () {
+    return Inertia::render('Answer');
+});
+
 Route::get('/bug_report', function () {
     return Inertia::render('Bug_report');
 });
