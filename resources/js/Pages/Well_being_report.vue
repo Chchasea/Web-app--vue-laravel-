@@ -152,7 +152,7 @@ export default{
                     :key="n"
                 >
                     <v-card class="pa-3">
-                        <span>{{top_answers[n-1].id}} | Region: {{top_answers[n-1].region}}</span> 
+                        <span class="ms-3">{{top_answers[n-1].id}} | Region: {{top_answers[n-1].region}}</span> 
                         <span class="ms-16">Mood: {{top_answers[n-1].mood}}</span>
                         <span class="ms-16">Reason: {{top_answers[n-1].reason}}</span>
                     </v-card>
