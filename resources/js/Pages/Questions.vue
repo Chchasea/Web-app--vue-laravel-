@@ -9,7 +9,8 @@ import Layout from '@/Pages/Layout.vue';
             location_filter: ['one', 'two', 'three', 'Manila'],
             location_filter_default: ['Manila'],
             region_filter: ['one', 'two', 'three', 'Manila'],
-            region_filter_default: ['APAC']
+            region_filter_default: ['APAC'],
+            dialog: false,
         }),
     }
 </script>
@@ -49,182 +50,110 @@ import Layout from '@/Pages/Layout.vue';
         <!-- Main Content -->
         <v-card height=80%>
             <v-container class="spacing-playground pa-3" fluid>
-                <!-- Well Being Check Up -->
-                <v-card class="mb-5" color="#E3E5E3" height=40%>
-                    <!-- Add Well Being Questions -->
+                <!-- Well Being Section -->
+                <div>
+                    <!-- Edit Button-->
                     <v-container class="spacing-playground pa-2 mb-2" fluid>
                         <div class="text-h6 font-weight-black">Well Being Check Up</div>
-                        <v-btn href="/add_daily_question" class="float-right" 
+                        <v-btn href="/edit_daily_questions" class="float-right" 
                             width=20% 
                             density="compact" 
-                            color="success" 
+                            color="warning" 
                             rounded="xl"
                         >
-                            Add Questions +
+                            Edit Questions 
+                            <v-icon
+                            icon="mdi-pencil"
+                            end
+                            ></v-icon>
                         </v-btn>
                     </v-container>
+                    <!-- List of Questions -->
                     <v-container class="spacing-playground pa-2" fluid>
-                        <!-- List of Questions -->
                         <div>
-                            <v-list bg-color="#E3E5E3">
+                            <v-list>
                                 <v-list-item class="mb-2" rounded="lg" variant="outlined">
                                     <v-row>
-                                        <v-col cols="6">
+                                        <v-col cols="10">
                                             Question: How are you feeling today?
                                         </v-col>
-                                        <v-col cols="3">
+                                        <v-col cols="2">
                                             Answer Type: Emoji
-                                        </v-col>
-                                        <v-col cols="3">
-                                            <v-row>
-                                                <v-col cols="6">
-                                                    <v-btn class="float-right" 
-                                                        width=100% 
-                                                        density="compact" 
-                                                        color="warning" 
-                                                        rounded="xl"
-                                                    >
-                                                        Edit
-                                                    </v-btn>
-                                                </v-col>
-                                                <v-col cols="6">
-                                                    <v-btn class="float-right" 
-                                                        width=100% 
-                                                        density="compact" 
-                                                        color="error" 
-                                                        rounded="xl"
-                                                    >
-                                                        Delete
-                                                    </v-btn>
-                                                </v-col>
-                                            </v-row>
                                         </v-col>
                                     </v-row>
                                 </v-list-item>
                                 <v-list-item class="mb-2" rounded="lg" variant="outlined">
                                     <v-row>
-                                        <v-col cols="6">
+                                        <v-col cols="10">
                                             Question: How are you feeling today?
                                         </v-col>
-                                        <v-col cols="3">
-                                            Answer Type: Emoji
-                                        </v-col>
-                                        <v-col cols="3">
-                                            <v-row>
-                                                <v-col cols="6">
-                                                    <v-btn class="float-right" 
-                                                        width=100% 
-                                                        density="compact" 
-                                                        color="warning" 
-                                                        rounded="xl"
-                                                    >
-                                                        Edit
-                                                    </v-btn>
-                                                </v-col>
-                                                <v-col cols="6">
-                                                    <v-btn class="float-right" 
-                                                        width=100% 
-                                                        density="compact" 
-                                                        color="error" 
-                                                        rounded="xl"
-                                                    >
-                                                        Delete
-                                                    </v-btn>
-                                                </v-col>
-                                            </v-row>
+                                        <v-col cols="2">
+                                            Answer Type: Text
                                         </v-col>
                                     </v-row>
                                 </v-list-item>
                             </v-list>
                         </div>
                     </v-container>
-                </v-card>
+                </div>
 
-                <!-- Survey Questions -->
+                <!-- Events Section -->
                 <div height=40%>
-                    <!-- Add Survey Questions -->
+                    <!-- Add Event -->
                     <v-container class="spacing-playground pa-2 mb-2" fluid>
-                        <div class="text-h6 font-weight-black">Survey</div>
-                        <v-btn class="float-right" 
+                        <div class="text-h6 font-weight-black">Events</div>
+                        <v-btn href="/add_event" class="float-right" 
                             width=20% 
                             density="compact" 
                             color="success" 
                             rounded="xl"
                         >
-                            Add Questions +
+                            Add Event 
+                            <v-icon
+                            icon="mdi-plus"
+                            end
+                            ></v-icon>
                         </v-btn>
                     </v-container>
+                    <!-- List of Events -->
                     <v-container class="spacing-playground pa-2" fluid>
-                        <!-- List of Questions -->
                         <div>
                             <v-list>
-                                <v-list-item class="mb-2" rounded="lg" variant="outlined">
+                                <v-list-item href="/" class="mb-2" rounded="lg" variant="outlined">
                                     <v-row>
-                                        <v-col cols="6">
-                                            Question: How are you feeling today?
+                                        <v-col cols="10">
+                                            Wellness Wednesday
                                         </v-col>
-                                        <v-col cols="3">
-                                            Answer Type: Emoji
-                                        </v-col>
-                                        <v-col cols="3">
-                                            <v-row>
-                                                <!-- Edit Button -->
-                                                <v-col cols="6">
-                                                    <v-btn class="float-right" 
-                                                        width=100% 
-                                                        density="compact" 
-                                                        color="warning" 
-                                                        rounded="xl"
-                                                    >
-                                                        Edit
-                                                    </v-btn>
-                                                </v-col>
-                                                <!-- Delete Button -->
-                                                <v-col cols="6">
-                                                    <v-btn class="float-right" 
-                                                        width=100% 
-                                                        density="compact" 
-                                                        color="error" 
-                                                        rounded="xl"
-                                                    >
-                                                        Delete
-                                                    </v-btn>
-                                                </v-col>
-                                            </v-row>
+                                        <v-col cols="2" class="d-flex justify-center">
+                                            <v-btn class="float-right" 
+                                                width="auto"
+                                                density="compact" 
+                                                color="error" 
+                                                rounded="xl"
+                                            >
+                                                <v-icon
+                                                icon="mdi-delete"
+                                                ></v-icon>
+                                            </v-btn>
                                         </v-col>
                                     </v-row>
                                 </v-list-item>
-                                <v-list-item class="mb-2" rounded="lg" variant="outlined">
+                                <v-list-item href="/" class="mb-2" rounded="lg" variant="outlined">
                                     <v-row>
-                                        <v-col cols="6">
-                                            Question: How are you feeling today?
+                                        <v-col cols="10">
+                                            Wellness Wednesday
                                         </v-col>
-                                        <v-col cols="3">
-                                            Answer Type: Emoji
-                                        </v-col>
-                                        <v-col cols="3">
-                                            <v-row>
-                                                <v-col cols="6">
-                                                    <v-btn class="float-right" 
-                                                        width=100% 
-                                                        density="compact" 
-                                                        color="warning" 
-                                                        rounded="xl"
-                                                    >
-                                                        Edit
-                                                    </v-btn>
-                                                </v-col>
-                                                <v-col cols="6">
-                                                    <v-btn class="float-right" 
-                                                        width=100% 
-                                                        density="compact" 
-                                                        color="error" 
-                                                        rounded="xl"
-                                                    >
-                                                        Delete
-                                                    </v-btn>
-                                                </v-col>
-                                            </v-row>
+                                        <v-col cols="2" class="d-flex justify-center">
+                                            <v-btn class="float-right" 
+                                                width="auto"
+                                                density="compact" 
+                                                color="error" 
+                                                rounded="xl"
+                                            >
+                                                <v-icon
+                                                icon="mdi-delete"
+                                                ></v-icon>
+                                            </v-btn>
                                         </v-col>
                                     </v-row>
                                 </v-list-item>

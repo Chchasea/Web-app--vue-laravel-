@@ -1,6 +1,7 @@
 import './bootstrap';
 import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
+// import 'mdi@/font/css/materialdesignicons.css'
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'

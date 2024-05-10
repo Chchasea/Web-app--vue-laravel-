@@ -39,6 +39,11 @@ Route::get('/bug_report', function () {
     return Inertia::render('Bug_report');
 });
 
-Route::get('/add_daily_question', function () {
-    return Inertia::render('Add_Daily_Question');
+// athena
+Route::get('/edit_daily_questions', function () {
+    return Inertia::render('Edit_Daily_Questions');
+});
+
+Route::get('/add_event', function () {
+    return Inertia::render('Add_Event');
 });
