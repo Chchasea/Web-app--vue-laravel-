@@ -13,59 +13,47 @@ export default {
 </script>
 <template>
     <Layout>
-        <div class="text-h6 mb-3">Survey Reports</div>
-        <v-card height="93%" class="pa-15">
-            <v-btn
-                variant="text"
-                prepend-icon="mdi-chevron-left"
-                href="/survey_report"
-                >Back</v-btn
-            >
-            <v-card class="mx-auto" max-width="950" elevation="5">
-                <div class="flex-column">
-                    <div class="flex-row">
-                        <div>
-                            <span class="date font-weight-black"
-                                >Event Name:
-                            </span>
-                            <span class=" "> Amdocs Coachella</span>
-                        </div>
-                        <div>
-                            <span class="date font-weight-bold"
-                                >Date of Event:
-                            </span>
-                            <span class="">January 25, 2024</span>
-                        </div>
+        <!-- Dynamic yung event title e.g. Amdocs Coachella -->
+        <div class="text-h6 mb-3">Amdocs Coachella | Survey Reports</div>
+        <v-card height="90%">
+            <v-container class="pa-3" fluid>
+                <!-- Back Button -->
+                <v-sheet>
+                    <div class="text-h6 font-weight-black">
+                        <v-btn href="/survey_report" class="font-weight-black" variant="text">
+                            <v-icon
+                            icon="mdi-chevron-left"
+                            start
+                            size="x-large"
+                            ></v-icon>
+                                Back
+                        </v-btn>
                     </div>
-
-                    <div class="flex-row">
-                        <span class="date font-weight-black text"
-                            >Recent Event Rate:
-                        </span>
-                        <span class="">
-                            <v-rating
-                                v-model="rating"
-                                class=""
-                                color="orange-lighten-1"
-                                readonly
-                            ></v-rating>
-                        </span>
-                    </div>
-                </div>
-                <div class="date font-weight-black">
-                    Overall Experience Comments:
-                </div>
-                <v-card class="mx-auto" max-width="950" elevation="5">
-                    <v-card
-                        class="mx-auto"
-                        max-width="950"
-                        elevation="5"
-                        text="HI"
-                    ></v-card>
+                </v-sheet>
+                <v-card class="mb-5" color="#E3E5E3" height="460px" >
+                    <v-container class="pa-9" fluid>
+                        <!-- Event Info -->
+                        <v-row>
+                            <v-col cols="6">
+                                <v-row>
+                                    <div class="font-weight-black">
+                                        Event Name: Amdocs Coachella
+                                    </div>
+                                </v-row>
+                                <v-row>
+                                    <div class="font-weight-black">
+                                        Date of Even: January 25, 2024
+                                    </div>
+                                </v-row>
+                            </v-col>
+                            <v-col cols="6">
+                                
+                            </v-col>
+                        </v-row>
+                        
+                    </v-container>
                 </v-card>
-                <div class="date font-weight-black">Rooms for Improvement:</div>
-            </v-card>
-
+            </v-container>
             <template> </template>
         </v-card>
     </Layout>
